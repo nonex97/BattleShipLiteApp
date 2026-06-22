@@ -1,0 +1,6 @@
+Problems:
+1. After the grid display, we need two empty lines because the text is in line with the shot grid. - DONE
+2. Who is shooting? - DONE
+3. Tell us the result of the shot and put one empty line after. - DONE
+4. Put a space after the hit/miss to keep spacing accurate. - DONE
+5. Winner was not declared after all ships were sunk. - DONE

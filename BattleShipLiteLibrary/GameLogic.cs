@@ -153,7 +153,7 @@ namespace BattleShipLiteLibrary
         {
             bool isValidShot = false;
 
-            foreach (var gridSpot in player.ShipLocations)
+            foreach (var gridSpot in player.ShotGrid)
             {
                 if (gridSpot.SpotLetter == row.ToUpper() && gridSpot.SpotNumber == column)
                 {
@@ -176,6 +176,7 @@ namespace BattleShipLiteLibrary
                 if (ship.SpotLetter == row.ToUpper() && ship.SpotNumber == column)
                 {
                     isAHit = true;
+                    ship.Status = GridSpotStatus.Sunk;
                 }
             }
 
